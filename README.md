@@ -85,15 +85,15 @@
 <table>
 <tr>
 <td align="center" width="50%">
-<a href="https://media.discordapp.net/attachments/1468485983287902345/1473226117719523430/Gemini_Generated_Image_rgzgu9rgzgu9rgzg.png?ex=6995703d&is=69941ebd&hm=05901e5ce51eeb017b5b64e39c12c170ad99ad2f061686acd75f58a2f6d354aa&=&format=webp&quality=lossless&width=1612&height=879">
-<img src="https://media.discordapp.net/attachments/1468485983287902345/1473226117719523430/Gemini_Generated_Image_rgzgu9rgzgu9rgzg.png?ex=6995703d&is=69941ebd&hm=05901e5ce51eeb017b5b64e39c12c170ad99ad2f061686acd75f58a2f6d354aa&=&format=webp&quality=lossless&width=400" alt="Dashboard Overview"/>
+<a href="https://raw.githubusercontent.com/iSHOURIYA/FraudNet.AI/main/docs/images/1.png">
+<img src="https://raw.githubusercontent.com/iSHOURIYA/FraudNet.AI/main/docs/images/1.png" width="400" alt="Dashboard Overview"/>
 </a>
 <br/><b>Dashboard Overview</b>
 <br/><sub>Real-time metrics — 45,231 transactions · 892 fraud cases · $2.3M saved</sub>
 </td>
 <td align="center" width="50%">
-<a href="https://media.discordapp.net/attachments/1468485983287902345/1473228452831297558/2.png?ex=6995726a&is=699420ea&hm=02b6e8a7f1c2d028e3c79f89df346e1375540d4a172bd9035f23f7f4721b4b99&=&format=webp&quality=lossless&width=1612&height=879">
-<img src="https://media.discordapp.net/attachments/1468485983287902345/1473228452831297558/2.png?ex=6995726a&is=699420ea&hm=02b6e8a7f1c2d028e3c79f89df346e1375540d4a172bd9035f23f7f4721b4b99&=&format=webp&quality=lossless&width=400" alt="Transaction Analytics"/>
+<a href="https://raw.githubusercontent.com/iSHOURIYA/FraudNet.AI/main/docs/images/2.png">
+<img src="https://raw.githubusercontent.com/iSHOURIYA/FraudNet.AI/main/docs/images/2.png" width="400" alt="Transaction Analytics"/>
 </a>
 <br/><b>Transaction Analytics</b>
 <br/><sub>Advanced filtering · risk scoring · donut chart · CSV/PDF export</sub>
@@ -101,15 +101,15 @@
 </tr>
 <tr>
 <td align="center" width="50%">
-<a href="https://media.discordapp.net/attachments/1468485983287902345/1473228619840094346/3.png?ex=69957292&is=69942112&hm=df574d207a2271b2f51cf1981f08235583c1f1e23588ab11c8493ed5c517f95a&=&format=webp&quality=lossless&width=1612&height=879">
-<img src="https://media.discordapp.net/attachments/1468485983287902345/1473228619840094346/3.png?ex=69957292&is=69942112&hm=df574d207a2271b2f51cf1981f08235583c1f1e23588ab11c8493ed5c517f95a&=&format=webp&quality=lossless&width=400" alt="User Management"/>
+<a href="https://raw.githubusercontent.com/iSHOURIYA/FraudNet.AI/main/docs/images/3.png">
+<img src="https://raw.githubusercontent.com/iSHOURIYA/FraudNet.AI/main/docs/images/3.png" width="400" alt="User Management"/>
 </a>
 <br/><b>User Management</b>
 <br/><sub>RBAC · permission badges · activity timeline · profile modals</sub>
 </td>
 <td align="center" width="50%">
-<a href="https://media.discordapp.net/attachments/1468485983287902345/1473228664870141993/4.png?ex=6995729c&is=6994211c&hm=b05fe9fcbee956af101e5cb585dc06f9b17d9fc829c46f1fa50693992812cc2c&=&format=webp&quality=lossless&width=1612&height=879">
-<img src="https://media.discordapp.net/attachments/1468485983287902345/1473228664870141993/4.png?ex=6995729c&is=6994211c&hm=b05fe9fcbee956af101e5cb585dc06f9b17d9fc829c46f1fa50693992812cc2c&=&format=webp&quality=lossless&width=400" alt="ML Model Performance"/>
+<a href="https://raw.githubusercontent.com/iSHOURIYA/FraudNet.AI/main/docs/images/4.png">
+<img src="https://raw.githubusercontent.com/iSHOURIYA/FraudNet.AI/main/docs/images/4.png" width="400" alt="ML Model Performance"/>
 </a>
 <br/><b>ML Model Performance</b>
 <br/><sub>Accuracy 94.2% · Precision 91.8% · Recall 89.5% · F1 90.6%</sub>
@@ -117,15 +117,15 @@
 </tr>
 <tr>
 <td align="center" width="50%">
-<a href="https://media.discordapp.net/attachments/1468485983287902345/1473228726622752912/5.png?ex=699572ab&is=6994212b&hm=0fb6faba2b2b1e1de0e738dc0bad6c859d546f17bf40c2ea9d5fc8762de29fd3&=&format=webp&quality=lossless&width=1612&height=879">
-<img src="https://media.discordapp.net/attachments/1468485983287902345/1473228726622752912/5.png?ex=699572ab&is=6994212b&hm=0fb6faba2b2b1e1de0e738dc0bad6c859d546f17bf40c2ea9d5fc8762de29fd3&=&format=webp&quality=lossless&width=400" alt="Alert Management"/>
+<a href="https://raw.githubusercontent.com/iSHOURIYA/FraudNet.AI/main/docs/images/5.png">
+<img src="https://raw.githubusercontent.com/iSHOURIYA/FraudNet.AI/main/docs/images/5.png" width="400" alt="Alert Management"/>
 </a>
 <br/><b>Alert Management</b>
 <br/><sub>Real-time alerts · severity indicators · Approve / Block / Review</sub>
 </td>
 <td align="center" width="50%">
-<a href="https://media.discordapp.net/attachments/1468485983287902345/1473229936725594204/6.png?ex=699573cc&is=6994224c&hm=876b77980b4ada91f2184ac7bd721deb9ca11ef8e99262941fa08b9d57532de1&=&format=webp&quality=lossless&width=1612&height=879">
-<img src="https://media.discordapp.net/attachments/1468485983287902345/1473229936725594204/6.png?ex=699573cc&is=6994224c&hm=876b77980b4ada91f2184ac7bd721deb9ca11ef8e99262941fa08b9d57532de1&=&format=webp&quality=lossless&width=400" alt="Architecture Diagram"/>
+<a href="https://raw.githubusercontent.com/iSHOURIYA/FraudNet.AI/main/docs/images/6.png">
+<img src="https://raw.githubusercontent.com/iSHOURIYA/FraudNet.AI/main/docs/images/6.png" width="400" alt="Architecture Diagram"/>
 </a>
 <br/><b>Architecture Diagram</b>
 <br/><sub>Next.js → Flask → MySQL / Redis / Kafka data flow</sub>
@@ -133,31 +133,31 @@
 </tr>
 <tr>
 <td align="center" width="50%">
-<a href="https://media.discordapp.net/attachments/1468485983287902345/1473230052870062263/7.png?ex=699573e7&is=69942267&hm=0466a5ced1a2d352afe5ef957d655a21c2332a7facff931186147f4b618698b3&=&format=webp&quality=lossless&width=1612&height=879">
-<img src="https://media.discordapp.net/attachments/1468485983287902345/1473230052870062263/7.png?ex=699573e7&is=69942267&hm=0466a5ced1a2d352afe5ef957d655a21c2332a7facff931186147f4b618698b3&=&format=webp&quality=lossless&width=400" alt="Monitoring Stack"/>
-</a>
-<br/><b>Monitoring Stack</b>
-<br/><sub>Grafana dashboards · API latency · resource gauges · error alerts</sub>
-</td>
-<td align="center" width="50%">
-<a href="https://media.discordapp.net/attachments/1468485983287902345/1473230570808152148/8.png?ex=69957463&is=699422e3&hm=5aedcb029021d47eb8fa3f7ec89d1a5565a86bb7e259afde08f7a334a84f0f31&=&format=webp&quality=lossless&width=1612&height=879">
-<img src="https://media.discordapp.net/attachments/1468485983287902345/1473230570808152148/8.png?ex=69957463&is=699422e3&hm=5aedcb029021d47eb8fa3f7ec89d1a5565a86bb7e259afde08f7a334a84f0f31&=&format=webp&quality=lossless&width=400" alt="Login Interface"/>
+<a href="https://raw.githubusercontent.com/iSHOURIYA/FraudNet.AI/main/docs/images/8.png">
+<img src="https://raw.githubusercontent.com/iSHOURIYA/FraudNet.AI/main/docs/images/8.png" width="400" alt="Login Interface"/>
 </a>
 <br/><b>Login Interface</b>
 <br/><sub>Secure JWT login · SSL indicator · role-aware redirect</sub>
 </td>
-</tr>
-<tr>
 <td align="center" width="50%">
-<a href="https://media.discordapp.net/attachments/1468485983287902345/1473230862551093381/9.png?ex=699574a8&is=69942328&hm=486ac0c202c3ad2383959740b62c8f3dfb708034758c2cad79c014dab246d977&=&format=webp&quality=lossless&width=1612&height=879">
-<img src="https://media.discordapp.net/attachments/1468485983287902345/1473230862551093381/9.png?ex=699574a8&is=69942328&hm=486ac0c202c3ad2383959740b62c8f3dfb708034758c2cad79c014dab246d977&=&format=webp&quality=lossless&width=400" alt="Transaction Detail View"/>
+<a href="https://raw.githubusercontent.com/iSHOURIYA/FraudNet.AI/main/docs/images/9.png">
+<img src="https://raw.githubusercontent.com/iSHOURIYA/FraudNet.AI/main/docs/images/9.png" width="400" alt="Transaction Detail View"/>
 </a>
 <br/><b>Transaction Detail View</b>
 <br/><sub>Risk scoring 0–100 · fraud indicators · action history · analyst notes</sub>
 </td>
+</tr>
+<tr>
 <td align="center" width="50%">
-<a href="https://media.discordapp.net/attachments/1468485983287902345/1473231375233581136/11.png?ex=69957523&is=699423a3&hm=a55689ff3a466377c56f85a96778424ef5ab6289361dd4000e2571f9c73540b3&=&format=webp&quality=lossless&width=1612&height=879">
-<img src="https://media.discordapp.net/attachments/1468485983287902345/1473231375233581136/11.png?ex=69957523&is=699423a3&hm=a55689ff3a466377c56f85a96778424ef5ab6289361dd4000e2571f9c73540b3&=&format=webp&quality=lossless&width=400" alt="Real-time Processing"/>
+<a href="https://raw.githubusercontent.com/iSHOURIYA/FraudNet.AI/main/docs/images/10.png">
+<img src="https://raw.githubusercontent.com/iSHOURIYA/FraudNet.AI/main/docs/images/10.png" width="400" alt="Test Coverage Dashboard"/>
+</a>
+<br/><b>Test Coverage</b>
+<br/><sub>Backend 95% · Frontend 90% · 1,000+ tests · CI/CD green</sub>
+</td>
+<td align="center" width="50%">
+<a href="https://raw.githubusercontent.com/iSHOURIYA/FraudNet.AI/main/docs/images/11.png">
+<img src="https://raw.githubusercontent.com/iSHOURIYA/FraudNet.AI/main/docs/images/11.png" width="400" alt="Real-time Processing"/>
 </a>
 <br/><b>Real-time Processing</b>
 <br/><sub>185ms avg · live stream · geographic map · system health</sub>
