@@ -67,11 +67,15 @@ def create_app(config_name: str = None) -> Flask:
     from app.api.models import models_bp
     from app.api.health import health_bp
     from app.api.users import users_bp
+    from app.api.auth import init_auth_routes
     
     app.register_blueprint(transactions_bp, url_prefix='/api/v1')
     app.register_blueprint(models_bp, url_prefix='/api/v1')
     app.register_blueprint(health_bp, url_prefix='/api/v1')
     app.register_blueprint(users_bp, url_prefix='/api/v1')
+    
+    # Initialize JWT authentication routes
+    init_auth_routes(app)
     
     # Global error handlers
     @app.errorhandler(400)
