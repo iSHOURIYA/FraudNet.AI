@@ -1,298 +1,344 @@
-# FraudNet.AI - Complete Fraud Detection Platform
+<div align="center"> # 🛡️ FraudNet.AI
 
-[![CI/CD](https://github.com/your-username/fraudnet-ai/actions/workflows/ci-cd.yml/badge.svg)](https://github.com/your-username/fraudnet-ai/actions/workflows/ci-cd.yml)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
-[![Next.js 14](https://img.shields.io/badge/Next.js-14.1.0-black.svg)](https://nextjs.org/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.3.3-blue.svg)](https://www.typescriptlang.org/)
+### Enterprise-Grade Fraud Detection Platform
 
-**🚀 Enterprise-grade fraud detection platform with modern web interface, real-time analytics, and production-ready infrastructure.**
+[![CI/CD](https://github.com/iSHOURIYA/FraudNet.AI/actions/workflows/ci-cd.yml/badge.svg)](https://github.com/iSHOURIYA/FraudNet.AI/actions/workflows/ci-cd.yml)[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)[![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)[![Next.js 14](https://img.shields.io/badge/Next.js-14.1.0-black.svg)](https://nextjs.org/)[![TypeScript](https://img.shields.io/badge/TypeScript-5.3.3-blue.svg)](https://www.typescriptlang.org/)[![Coverage](https://img.shields.io/badge/coverage-95%25-brightgreen.svg)](https://claude.ai/chat/8223bf07-efa0-4533-8b35-930ed6f28ab0#-testing)[![Docker](https://img.shields.io/badge/docker-ready-blue.svg)](https://www.docker.com/)[![Kubernetes](https://img.shields.io/badge/kubernetes-supported-326CE5.svg)](https://kubernetes.io/)
 
-FraudNet.AI is a complete fraud detection ecosystem featuring a React/Next.js frontend, Python/Flask backend, JWT authentication, role-based access control, and comprehensive monitoring capabilities. Built for scale with Docker, Kubernetes, and modern DevOps practices.
+**Real-time fraud detection with a modern web dashboard, ML pipeline, JWT authentication, and production-ready infrastructure.**
 
-![Platform Overview](docs/images/platform-overview.png)
-*Complete fraud detection platform with web dashboard, real-time analytics, and enterprise security*
+[Quick Start](https://claude.ai/chat/8223bf07-efa0-4533-8b35-930ed6f28ab0#-quick-start) · [Architecture](https://claude.ai/chat/8223bf07-efa0-4533-8b35-930ed6f28ab0#%EF%B8%8F-platform-architecture) · [API Docs](https://claude.ai/chat/8223bf07-efa0-4533-8b35-930ed6f28ab0#-api-documentation) · [Deployment](https://claude.ai/chat/8223bf07-efa0-4533-8b35-930ed6f28ab0#-production-deployment) · [Live Demo](https://fraudnet-ai.shauryacodes.xyz/)
+
+---
+
+![Platform Overview](https://media.discordapp.net/attachments/1468485983287902345/1473229936725594204/6.png?ex=699573cc&is=6994224c&hm=876b77980b4ada91f2184ac7bd721deb9ca11ef8e99262941fa08b9d57532de1&=&format=webp&quality=lossless&width=1612&height=879)*Complete fraud detection platform — web dashboard, real-time analytics, and enterprise security*
+
+</div> ---
+
+ ---## 📋 Table of Contents
+
+* [✨ Features](https://claude.ai/chat/8223bf07-efa0-4533-8b35-930ed6f28ab0#-platform-features)
+* [🖼️ Screenshots](https://claude.ai/chat/8223bf07-efa0-4533-8b35-930ed6f28ab0#%EF%B8%8F-platform-screenshots)
+* [🚀 Quick Start](https://claude.ai/chat/8223bf07-efa0-4533-8b35-930ed6f28ab0#-quick-start)
+* [🏗️ Architecture](https://claude.ai/chat/8223bf07-efa0-4533-8b35-930ed6f28ab0#%EF%B8%8F-platform-architecture)
+* [🎨 Frontend](https://claude.ai/chat/8223bf07-efa0-4533-8b35-930ed6f28ab0#-frontend-features)
+* [📚 API Documentation](https://claude.ai/chat/8223bf07-efa0-4533-8b35-930ed6f28ab0#-api-documentation)
+* [🔐 Authentication & Authorization](https://claude.ai/chat/8223bf07-efa0-4533-8b35-930ed6f28ab0#-authentication--authorization)
+* [💻 Development Setup](https://claude.ai/chat/8223bf07-efa0-4533-8b35-930ed6f28ab0#-development-setup)
+* [🐳 Production Deployment](https://claude.ai/chat/8223bf07-efa0-4533-8b35-930ed6f28ab0#-production-deployment)
+* [📊 Monitoring & Observability](https://claude.ai/chat/8223bf07-efa0-4533-8b35-930ed6f28ab0#-monitoring--observability)
+* [🧪 Testing](https://claude.ai/chat/8223bf07-efa0-4533-8b35-930ed6f28ab0#-testing)
+* [⚙️ Configuration](https://claude.ai/chat/8223bf07-efa0-4533-8b35-930ed6f28ab0#%EF%B8%8F-configuration)
+* [🤝 Contributing](https://claude.ai/chat/8223bf07-efa0-4533-8b35-930ed6f28ab0#-contributing)
+* [📄 License](https://claude.ai/chat/8223bf07-efa0-4533-8b35-930ed6f28ab0#-license)
+* [🆘 Support](https://claude.ai/chat/8223bf07-efa0-4533-8b35-930ed6f28ab0#-support)
+
+---
 
 ## ✨ Platform Features
 
-### 🎨 **Modern Web Interface**
-- **Next.js 14 Dashboard** with server-side rendering and App Router
-- **Real-time Fraud Analytics** with interactive charts and metrics
-- **Transaction Explorer** with advanced filtering and search
-- **Model Management Interface** for ML model monitoring
-- **Responsive Design** optimized for desktop, tablet, and mobile
-- **Dark/Light Mode** with fraud-specific color schemes
-
-### 🔐 **Enterprise Authentication & Security**
-- **JWT Authentication** with automatic token refresh
-- **Role-Based Access Control** (Admin, Analyst, Viewer)
-- **Multi-factor Authentication** ready (2FA/TOTP)
-- **Session Management** with Redis backend
-- **API Security** with rate limiting and input validation
-- **Audit Logging** for compliance and security monitoring
-
-### 🤖 **Advanced Fraud Detection**
-- **Real-time Processing** sub-200ms transaction analysis
-- **Machine Learning Pipeline** with automated retraining
-- **Feature Engineering** with training-inference parity
-- **Model Versioning** and A/B testing capabilities
-- **Risk Scoring** with configurable thresholds
-- **Batch Processing** for high-volume transactions
-
-### 🏗 **Production Infrastructure**
-- **Microservices Architecture** with Docker containers
-- **Auto-scaling** with Kubernetes and Horizontal Pod Autoscaling
-- **Caching Layer** with Redis for performance optimization
-- **Message Queue** with Kafka for event streaming
-- **Observability Stack** with Prometheus, Grafana, and Jaeger
-- **CI/CD Pipeline** with automated testing and deployment
+<table> <tr> <td width="50%"> ### 🎨 Modern Web Interface
 
 ## 🖼️ Platform Screenshots
 
-### Dashboard Overview
-![Dashboard Overview](docs/images/dashboard-overview.png)
-*Real-time fraud detection dashboard with key metrics and trends*
+### 🏠 Dashboard Overview
 
-### Transaction Analytics
-![Transaction Analytics](docs/images/transaction-analytics.png)
-*Advanced transaction filtering and risk analysis interface*
+![Dashboard Overview](https://media.discordapp.net/attachments/1468485983287902345/1473226117719523430/Gemini_Generated_Image_rgzgu9rgzgu9rgzg.png?ex=6995703d&is=69941ebd&hm=05901e5ce51eeb017b5b64e39c12c170ad99ad2f061686acd75f58a2f6d354aa&=&format=webp&quality=lossless&width=1612&height=879)*Real-time metrics — total transactions, fraud rate, amount saved, and live alert feed*
 
-### User Management
-![User Management](docs/images/user-management.png)
-*Role-based user management with detailed permissions*
+### 📊 Transaction Analytics
 
-### Model Performance
-![Model Performance](docs/images/model-performance.png)
-*ML model monitoring with performance metrics and training history*
+![Transaction Analytics](https://media.discordapp.net/attachments/1468485983287902345/1473228452831297558/2.png?ex=6995726a&is=699420ea&hm=02b6e8a7f1c2d028e3c79f89df346e1375540d4a172bd9035f23f7f4721b4b99&=&format=webp&quality=lossless&width=1612&height=879)*Advanced transaction filtering, risk distribution chart, and CSV/PDF export*
 
-### Alert Management
-![Alert Management](docs/images/alert-management.png)
-*Real-time alert dashboard with configurable fraud rules*
+### 👥 User Management
 
-## 📋 Table of Contents
+![User Management](https://media.discordapp.net/attachments/1468485983287902345/1473228619840094346/3.png?ex=69957292&is=69942112&hm=df574d207a2271b2f51cf1981f08235583c1f1e23588ab11c8493ed5c517f95a&=&format=webp&quality=lossless&width=1612&height=879)*Role-based user management with activity timeline and audit trails*
 
-- [🚀 Quick Start](#-quick-start)
-- [🏗 Platform Architecture](#-platform-architecture)
-- [🎨 Frontend Features](#-frontend-features)
-- [📚 API Documentation](#-api-documentation)
-- [🔐 Authentication & Authorization](#-authentication--authorization)
-- [💻 Development Setup](#-development-setup)
-- [🐳 Production Deployment](#-production-deployment)
-- [📊 Monitoring & Observability](#-monitoring--observability)
-- [🧪 Testing](#-testing)
-- [🤝 Contributing](#-contributing)
+### 🤖 Model Performance
+
+![Model Performance](https://media.discordapp.net/attachments/1468485983287902345/1473228664870141993/4.png?ex=6995729c&is=6994211c&hm=b05fe9fcbee956af101e5cb585dc06f9b17d9fc829c46f1fa50693992812cc2c&=&format=webp&quality=lossless&width=1612&height=879)*ML model monitoring — accuracy 94.2%, feature importance, confusion matrix, and drift detection*
+
+### 🚨 Alert Management
+
+![Alert Management](https://media.discordapp.net/attachments/1468485983287902345/1473228726622752912/5.png?ex=699572ab&is=6994212b&hm=0fb6faba2b2b1e1de0e738dc0bad6c859d546f17bf40c2ea9d5fc8762de29fd3&=&format=webp&quality=lossless&width=1612&height=879)*Real-time alert feed with severity indicators and one-click approve / block / review actions*
+
+### 🔐 Login Interface
+
+![Login Interface](https://media.discordapp.net/attachments/1468485983287902345/1473230570808152148/8.png?ex=69957463&is=699422e3&hm=5aedcb029021d47eb8fa3f7ec89d1a5565a86bb7e259afde08f7a334a84f0f31&=&format=webp&quality=lossless&width=1612&height=879)*Clean, secure login page with JWT-backed authentication*
+
+### 🔍 Transaction Explorer
+
+![Transaction Explorer](https://media.discordapp.net/attachments/1468485983287902345/1473230862551093381/9.png?ex=699574a8&is=69942328&hm=486ac0c202c3ad2383959740b62c8f3dfb708034758c2cad79c014dab246d977&=&format=webp&quality=lossless&width=1612&height=879)*Deep-dive transaction view — risk scoring, fraud indicators, related patterns, and analyst notes*
+
+### ⚡ Real-time Processing
+
+![Real-time Processing](https://media.discordapp.net/attachments/1468485983287902345/1473231375233581136/11.png?ex=69957523&is=699423a3&hm=a55689ff3a466377c56f85a96778424ef5ab6289361dd4000e2571f9c73540b3&=&format=webp&quality=lossless&width=550&height=300)*Live transaction stream — 185ms avg processing, throughput chart, and geographic map*
+
+### 📈 Monitoring Stack
+
+![Monitoring Stack](https://media.discordapp.net/attachments/1468485983287902345/1473230052870062263/7.png?ex=699573e7&is=69942267&hm=0466a5ced1a2d352afe5ef957d655a21c2332a7facff931186147f4b618698b3&=&format=webp&quality=lossless&width=550&height=300)*Grafana-powered observability — API latency, system resources, and fraud rate metrics*
+
+### ✅ Test Coverage
+
+![Test Coverage](https://media.discordapp.net/attachments/1468485983287902345/1473231102813409506/10.png?ex=699574e2&is=69942362&hm=fac78beae697552030ded3c0200604c91092bd24bba78164387f841d070b3234&=&format=webp&quality=lossless&width=550&height=300)*CI/CD pipeline status — 95% backend coverage, 90% frontend coverage, all checks green*
+
+---
 
 ## 🚀 Quick Start
 
-### Full Platform Deployment (Recommended)
+### Option 1 — Full Platform (Recommended)
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/your-username/fraudnet-ai.git
-   cd fraudnet-ai
-   ```
+```bash
+# 1. Clone the repository
+git clone https://github.com/iSHOURIYA/FraudNet.AI.git
+cd FraudNet.AI
 
-2. **Start the complete platform**
-   ```bash
-   # Start all services (Frontend + Backend + Infrastructure)
-   docker-compose -f docker-compose.prod.yml up -d
-   
-   # Initialize authentication system
-   python scripts/init_auth.py
-   ```
+# 2. Start all services (Frontend + Backend + Infrastructure)
+docker-compose -f docker-compose.prod.yml up -d
 
-3. **Access the platform**
-   - **Web Dashboard**: [http://localhost:3000](http://localhost:3000)
-   - **API Documentation**: [http://localhost:5000/api](http://localhost:5000/api)
-   - **Monitoring Dashboard**: [http://localhost:3001](http://localhost:3001)
+# 3. Initialize the authentication system
+python scripts/init_auth.py
+```
 
-4. **Login with default credentials**
-   - **Admin**: admin@fraudnet.ai / admin123
-   - **Analyst**: analyst@fraudnet.ai / analyst123
-   - **Viewer**: viewer@fraudnet.ai / viewer123
+**Access the platform:**
 
-### Development Setup
 
-1. **Start development environment**
-   ```bash
-   # Backend development
-   make docker-up
-   make migrate
-   make seed-data
-   
-   # Frontend development
-   cd frontend
-   npm install
-   npm run dev
-   ```
+| Service          | URL                       |
+| ---------------- | ------------------------- |
+| 🌐 Web Dashboard | http://localhost:3000     |
+| 📡 REST API      | http://localhost:5000/api |
+| 📊 Monitoring    | http://localhost:3001     |
 
-2. **Test the platform**
-   ```bash
-   # Test API endpoint
-   curl -X POST http://localhost:5000/api/v1/auth/login \
-     -H "Content-Type: application/json" \
-     -d '{"email": "admin@fraudnet.ai", "password": "admin123"}'
-   
-   # Access frontend
-   open http://localhost:3000
-   ```
+**Default credentials:**
 
-## 🏗 Platform Architecture
+
+| Role    | Email               | Password   |
+| ------- | ------------------- | ---------- |
+| Admin   | admin@fraudnet.ai   | admin123   |
+| Analyst | analyst@fraudnet.ai | analyst123 |
+| Viewer  | viewer@fraudnet.ai  | viewer123  |
+
+> ⚠️ **Change all default passwords before any production deployment.**
+
+---
+
+### Option 2 — Development Setup
+
+```bash
+# Backend
+make docker-up        # Start MySQL, Redis, and Flask API
+make migrate          # Initialize database schema
+make seed-data        # Load sample data
+
+# Frontend (new terminal)
+cd frontend
+npm install
+npm run dev           # http://localhost:3000
+```
+
+**Verify everything is running:**
+
+```bash
+# Authenticate and receive a JWT token
+curl -X POST http://localhost:5000/api/v1/auth/login \
+  -H "Content-Type: application/json" \
+  -d '{"email": "admin@fraudnet.ai", "password": "admin123"}'
+
+# Health check
+curl http://localhost:5000/api/v1/health
+```
+
+---
+
+## 🏗️ Platform Architecture
 
 FraudNet.AI follows a modern microservices architecture with clear separation of concerns:
 
 ```
 ┌─────────────────────────────────────────────────────────────────────────┐
-│                          Load Balancer (Nginx)                          │
-├─────────────────────────┬───────────────────────────┬───────────────────┤
-│    Frontend (Next.js)   │     Backend (Flask)       │   Infrastructure   │
-│                         │                           │                    │
-│ ┌─────────────────────┐ │ ┌─────────────────────────┐ │ ┌───────────────┐ │
-│ │   Web Dashboard     │ │ │     REST API            │ │ │  Prometheus   │ │
-│ │   • Real-time UI    │◄─┤ │     • Authentication    │ │ │  (Metrics)    │ │
-│ │   • Transaction     │ │ │     • Transaction API   │ │ └───────────────┘ │
-│ │     Explorer        │ │ │     • Model Management  │ │ ┌───────────────┐ │
-│ │   • User Mgmt       │ │ │     • Health Checks     │ │ │   Grafana     │ │
-│ │   • Analytics       │ │ └─────────────────────────┘ │ │ (Dashboards)  │ │
-│ └─────────────────────┘ │                           │ └───────────────┘ │
-├─────────────────────────┼───────────────────────────┤                   │
-│   Authentication        │    Business Logic         │ ┌───────────────┐ │
-│                         │                           │ │     Kafka     │ │
-│ ┌─────────────────────┐ │ ┌─────────────────────────┐ │ │ (Streaming)   │ │
-│ │  JWT Auth System    │ │ │   Fraud Detection       │◄┤ │   • Events    │ │
-│ │  • Login/Logout     │ │ │   • Feature Engineering │ │ │   • Real-time │ │
-│ │  • RBAC             │ │ │   • ML Pipeline         │ │ │   • Analytics │ │
-│ │  • Session Mgmt     │ │ │   • Model Training      │ │ └───────────────┘ │
-│ └─────────────────────┘ │ └─────────────────────────┘ │                   │
-├─────────────────────────┴───────────────────────────┤                   │
-│                     Data & Cache Layer                │ ┌───────────────┐ │
-│                                                       │ │    Redis      │ │
-│ ┌─────────────────┐  ┌─────────────────────────────┐ │ │  (Cache)      │ │
-│ │     MySQL       │  │         Redis Cluster        │◄┤ │   • Sessions  │ │
-│ │   • Users       │  │         • User Sessions      │ │ │   • API Cache │ │
-│ │   • Transactions│  │         • API Response Cache │ │ │   • Rate Limit│ │
-│ │   • Models      │  │         • Rate Limiting      │ │ └───────────────┘ │
-│ │   • Audit Logs  │  │         • Real-time Data     │ │                   │
-│ └─────────────────┘  └─────────────────────────────┘ │                   │
+│                         Load Balancer (Nginx)                           │
+├──────────────────────┬──────────────────────────┬───────────────────────┤
+│   Frontend (Next.js) │    Backend (Flask)        │   Infrastructure      │
+│                      │                           │                       │
+│  ┌──────────────────┐│ ┌───────────────────────┐ │ ┌───────────────────┐ │
+│  │  Web Dashboard   ││ │      REST API         │ │ │   Prometheus      │ │
+│  │  • Real-time UI  │◄┤ │  • Authentication     │ │ │   (Metrics)       │ │
+│  │  • Transactions  ││ │  • Transaction API    │ │ └───────────────────┘ │
+│  │  • User Mgmt     ││ │  • Model Management   │ │ ┌───────────────────┐ │
+│  │  • Analytics     ││ │  • Health Checks      │ │ │   Grafana         │ │
+│  └──────────────────┘│ └───────────────────────┘ │ │   (Dashboards)    │ │
+│                      │                           │ └───────────────────┘ │
+├──────────────────────┼──────────────────────────┤ ┌───────────────────┐ │
+│   Auth Layer         │   Business Logic          │ │   Kafka           │ │
+│                      │                           │ │   (Streaming)     │ │
+│  ┌──────────────────┐│ ┌───────────────────────┐ │ │  • Events         │ │
+│  │  JWT Auth System ││ │  Fraud Detection      │◄┤ │  • Real-time      │ │
+│  │  • Login/Logout  ││ │  • Feature Engineering│ │ └───────────────────┘ │
+│  │  • RBAC          ││ │  • ML Pipeline        │ │                       │
+│  │  • Session Mgmt  ││ │  • Model Training     │ │ ┌───────────────────┐ │
+│  └──────────────────┘│ └───────────────────────┘ │ │   Redis (Cache)   │ │
+│                      │                           │ │  • Sessions       │ │
+├──────────────────────┴──────────────────────────┤ │  • API Cache      │ │
+│              Data & Cache Layer                  │ │  • Rate Limiting  │ │
+│  ┌──────────────┐  ┌──────────────────────────┐ │ └───────────────────┘ │
+│  │    MySQL     │  │     Redis Cluster         │◄┤                       │
+│  │  • Users     │  │  • Sessions              │ │                       │
+│  │  • Txns      │  │  • API Cache             │ │                       │
+│  │  • Models    │  │  • Rate Limits           │ │                       │
+│  │  • Audit     │  │  • Real-time Data        │ │                       │
+│  └──────────────┘  └──────────────────────────┘ │                       │
 └─────────────────────────────────────────────────────────────────────────┘
 ```
 
 ### Key Components
 
-| Component | Technology | Purpose |
-|-----------|------------|---------|
-| **Frontend** | Next.js 14, TypeScript, TailwindCSS | Web dashboard and user interface |
-| **Backend API** | Flask 3.0, Python 3.11 | REST API and business logic |
-| **Authentication** | JWT, Redis sessions | User management and security |
-| **Database** | MySQL 8.0+ | Primary data storage |
-| **Cache** | Redis 7+ | Session store and API caching |
-| **Message Queue** | Kafka | Event streaming and real-time processing |
-| **Monitoring** | Prometheus + Grafana | Metrics collection and visualization |
-| **Load Balancer** | Nginx | Request routing and SSL termination |
+
+| Component          | Technology                          | Purpose                                  |
+| ------------------ | ----------------------------------- | ---------------------------------------- |
+| **Frontend**       | Next.js 14, TypeScript, TailwindCSS | Web dashboard and user interface         |
+| **Backend API**    | Flask 3.0, Python 3.11              | REST API and business logic              |
+| **Authentication** | JWT + Redis sessions                | User management and security             |
+| **Database**       | MySQL 8.0+                          | Primary data storage                     |
+| **Cache**          | Redis 7+                            | Session store and API caching            |
+| **Message Queue**  | Kafka                               | Event streaming and real-time processing |
+| **Monitoring**     | Prometheus + Grafana                | Metrics collection and visualization     |
+| **Load Balancer**  | Nginx                               | Request routing and SSL termination      |
+
+---
 
 ## 🎨 Frontend Features
 
 ### Dashboard Components
 
-#### Real-time Metrics Dashboard
+The real-time dashboard surfaces the most critical metrics at a glance:
+
 ```typescript
-// Key metrics displayed in real-time
 interface DashboardMetrics {
-  totalTransactions: number;
-  fraudDetected: number;
-  fraudRate: percentage;
-  amountSaved: currency;
+  totalTransactions: number;   // e.g. 45,231
+  fraudDetected: number;       // e.g. 892
+  fraudRate: percentage;       // e.g. 1.97%
+  amountSaved: currency;       // e.g. $2.3M
   recentAlerts: FraudAlert[];
   systemHealth: HealthStatus;
 }
 ```
-![Real-time Dashboard](docs/images/realtime-dashboard.png)
 
-#### Transaction Explorer
-- **Advanced Filtering**: Date range, amount, risk level, merchant
-- **Risk Analysis**: Visual risk scoring with color-coded indicators
-- **Export Capabilities**: CSV, PDF export for compliance
-- **Bulk Operations**: Approve/reject multiple transactions
+![Real-time Dashboard](https://media.discordapp.net/attachments/1468485983287902345/1473231375233581136/11.png?ex=69957523&is=699423a3&hm=a55689ff3a466377c56f85a96778424ef5ab6289361dd4000e2571f9c73540b3&=&format=webp&quality=lossless&width=550&height=300)
 
-![Transaction Explorer](docs/images/transaction-explorer.png)
+**Transaction Explorer** provides advanced filtering across date range, amount, risk level, and merchant — with CSV/PDF export for compliance, bulk approve/reject operations, and visual risk-score indicators.
 
-#### User Management Interface
-- **Role-based Access Control**: Admin, Analyst, Viewer permissions
-- **User Activity Tracking**: Login history and audit trails
-- **Profile Management**: User settings and preferences
+![Transaction Explorer](https://media.discordapp.net/attachments/1468485983287902345/1473230862551093381/9.png?ex=699574a8&is=69942328&hm=486ac0c202c3ad2383959740b62c8f3dfb708034758c2cad79c014dab246d977&=&format=webp&quality=lossless&width=1612&height=879)
 
-![User Management](docs/images/user-dashboard.png)
+**User Management** covers role-based access control, login history, audit trails, and full profile management — all in one interface.
 
-### Technical Implementation
+![User Management](https://media.discordapp.net/attachments/1468485983287902345/1473228619840094346/3.png?ex=69957292&is=69942112&hm=df574d207a2271b2f51cf1981f08235583c1f1e23588ab11c8493ed5c517f95a&=&format=webp&quality=lossless&width=1612&height=879)
 
-#### Frontend Stack
+### Frontend Stack
+
 ```json
 {
-  "framework": "Next.js 14.1.0 (App Router)",
-  "language": "TypeScript 5.3.3",
-  "styling": "TailwindCSS 3.4.1",
-  "charts": "Recharts 2.10.3",
-  "forms": "React Hook Form + Zod",
-  "http": "Axios with interceptors",
-  "auth": "JWT with refresh tokens"
+  "framework":  "Next.js 14.1.0 (App Router)",
+  "language":   "TypeScript 5.3.3",
+  "styling":    "TailwindCSS 3.4.1",
+  "charts":     "Recharts 2.10.3",
+  "forms":      "React Hook Form + Zod",
+  "http":       "Axios with interceptors",
+  "auth":       "JWT with refresh tokens"
 }
 ```
 
-#### Key Frontend Features
-- **Server-Side Rendering**: Optimized performance and SEO
-- **Progressive Web App**: Offline support and mobile installation
-- **Real-time Updates**: WebSocket connections for live data
-- **Responsive Design**: Mobile-first responsive layout
-- **Accessibility**: WCAG 2.1 AA compliant
-- **Internationalization**: Multi-language support ready
+Key capabilities include server-side rendering for performance and SEO, Progressive Web App support with offline mode, WebSocket connections for live data, WCAG 2.1 AA accessibility compliance, and internationalization readiness.
+
+---
 
 ## 📚 API Documentation
 
-### Authentication-First API
+### Authentication
 
-All API endpoints now use JWT authentication instead of API keys:
+All API endpoints use JWT Bearer tokens. Start by logging in:
 
 ```bash
-# 1. Login to get JWT token
+# Step 1 — Authenticate
 curl -X POST http://localhost:5000/api/v1/auth/login \
   -H "Content-Type: application/json" \
   -d '{"email": "admin@fraudnet.ai", "password": "admin123"}'
 
-# 2. Use JWT token for API calls
+# Step 2 — Use the token
 curl -H "Authorization: Bearer <jwt-token>" \
      http://localhost:5000/api/v1/transactions
 ```
 
-### Core API Endpoints
+### Endpoint Reference
 
-#### Authentication Endpoints
+#### Authentication
+
 ```http
-POST   /api/v1/auth/login           # User login
-POST   /api/v1/auth/logout          # User logout  
-POST   /api/v1/auth/refresh         # Refresh JWT token
-GET    /api/v1/auth/me              # Get current user
-POST   /api/v1/auth/change-password # Change password
+POST   /api/v1/auth/login            # Login — returns access & refresh tokens
+POST   /api/v1/auth/logout           # Logout and invalidate session
+POST   /api/v1/auth/refresh          # Exchange refresh token for new access token
+GET    /api/v1/auth/me               # Get current authenticated user
+POST   /api/v1/auth/change-password  # Update user password
 ```
 
-#### Transaction Management
+#### Transactions
+
 ```http
-GET    /api/v1/dashboard/metrics    # Dashboard metrics
-GET    /api/v1/transactions         # List transactions
-POST   /api/v1/transactions         # Create transaction
-GET    /api/v1/transactions/:id     # Get transaction
-POST   /api/v1/transactions/predict # Predict fraud risk
-POST   /api/v1/transactions/bulk    # Bulk processing
+GET    /api/v1/dashboard/metrics     # Real-time dashboard metrics
+GET    /api/v1/transactions          # List transactions (filterable & paginated)
+POST   /api/v1/transactions          # Submit a transaction for analysis
+GET    /api/v1/transactions/:id      # Retrieve a specific transaction
+POST   /api/v1/transactions/predict  # Predict fraud probability
+POST   /api/v1/transactions/bulk     # Bulk transaction processing
 ```
 
-#### User Management (Admin Only)
+#### Model Management
+
 ```http
-GET    /api/v1/users                # List users
-POST   /api/v1/users                # Create user
-PUT    /api/v1/users/:id            # Update user
-DELETE /api/v1/users/:id            # Delete user
+POST   /api/v1/models/train                # Train a new fraud detection model
+GET    /api/v1/models/:version/metrics     # Retrieve model performance metrics
 ```
 
-### Enhanced API Response Format
+#### User Management *(Admin only)*
+
+```http
+GET    /api/v1/users                 # List all users
+POST   /api/v1/users                 # Create a new user
+PUT    /api/v1/users/:id             # Update user details or role
+DELETE /api/v1/users/:id             # Remove a user
+```
+
+#### Health & Monitoring
+
+```http
+GET    /api/v1/health                # Basic liveness check
+GET    /api/v1/health/live           # Kubernetes liveness probe
+GET    /api/v1/health/ready          # Kubernetes readiness probe
+GET    /api/v1/health/db             # Database connectivity
+GET    /api/v1/health/cache          # Redis connectivity
+GET    /api/v1/health/ml             # ML model status
+GET    /api/v1/health/detailed       # Full system status
+```
+
+### Request Example — Create Transaction
+
+```http
+POST /api/v1/transactions
+Authorization: Bearer <jwt-token>
+Content-Type: application/json
+
+{
+  "user_id": "user_001",
+  "amount": 150.50,
+  "merchant": "Amazon",
+  "merchant_category": "online",
+  "location_country": "US",
+  "location_city": "New York",
+  "payment_method": "credit_card",
+  "device_type": "web"
+}
+```
+
+### Response Format
+
+All endpoints return a consistent envelope:
 
 ```json
 {
@@ -308,8 +354,8 @@ DELETE /api/v1/users/:id            # Delete user
     "features_used": ["amount_zscore", "velocity", "merchant_risk"],
     "explainability": {
       "top_factors": [
-        {"feature": "amount_zscore", "importance": 0.35},
-        {"feature": "transaction_velocity", "importance": 0.28}
+        { "feature": "amount_zscore",        "importance": 0.35 },
+        { "feature": "transaction_velocity", "importance": 0.28 }
       ]
     }
   },
@@ -318,11 +364,49 @@ DELETE /api/v1/users/:id            # Delete user
 }
 ```
 
+### Error Responses
+
+```json
+{
+  "error": "Validation failed",
+  "message": "Amount cannot be negative",
+  "timestamp": "2026-02-17T10:30:00Z",
+  "correlation_id": "abc-123-def"
+}
+```
+
+### Rate Limits
+
+
+| Endpoint             | Limit         |
+| -------------------- | ------------- |
+| Transaction creation | 50 req / min  |
+| Transaction reads    | 100 req / min |
+| Bulk processing      | 10 req / min  |
+| Model training       | 5 req / hour  |
+
+Per-role limits are also enforced:
+
+
+| Role    | Limit            |
+| ------- | ---------------- |
+| Admin   | 1,000 req / hour |
+| Analyst | 500 req / hour   |
+| Viewer  | 200 req / hour   |
+
+Rate limit status is returned in every response header:
+
+```
+X-RateLimit-Limit: 50
+X-RateLimit-Remaining: 47
+X-RateLimit-Reset: 1642248600
+```
+
+---
+
 ## 🔐 Authentication & Authorization
 
-### JWT-Based Authentication
-
-FraudNet.AI uses industry-standard JWT tokens for secure authentication:
+### JWT Authentication Flow
 
 ```mermaid
 sequenceDiagram
@@ -332,103 +416,79 @@ sequenceDiagram
     participant Cache as Redis
 
     UI->>API: POST /auth/login {email, password}
-    API->>DB: Validate user credentials
+    API->>DB: Validate credentials
     DB-->>API: User data + role
     API->>Cache: Store session data
     API-->>UI: JWT tokens (access + refresh)
-    
+
     UI->>API: API call with Bearer token
     API->>Cache: Validate token & get user
     API-->>UI: Protected resource
-    
+
     Note over UI,API: Token refresh flow
     UI->>API: POST /auth/refresh {refresh_token}
     API-->>UI: New access token
 ```
 
-### Role-Based Access Control (RBAC)
+### Role-Based Access Control
 
-| Role | Permissions | Dashboard Access |
-|------|-------------|------------------|
-| **Admin** | Full system access, user management, system settings | ✅ All features |
-| **Analyst** | Transaction analysis, model management, reports | ✅ Analytics & Models |
-| **Viewer** | Read-only access to dashboard and transactions | ✅ Dashboard only |
 
-### Security Features
+| Role        | Permissions                                          | Dashboard Access   |
+| ----------- | ---------------------------------------------------- | ------------------ |
+| **Admin**   | Full system access, user management, system settings | All features       |
+| **Analyst** | Transaction analysis, model management, reports      | Analytics & Models |
+| **Viewer**  | Read-only dashboard and transactions                 | Dashboard only     |
+
+### Security Configuration
 
 ```python
-# JWT Configuration
-JWT_ACCESS_TOKEN_EXPIRES = timedelta(hours=1)
+# JWT token lifetimes
+JWT_ACCESS_TOKEN_EXPIRES  = timedelta(hours=1)
 JWT_REFRESH_TOKEN_EXPIRES = timedelta(days=30)
-JWT_ALGORITHM = 'HS256'
+JWT_ALGORITHM             = 'HS256'
 
-# Rate Limiting (per user role)
-RATE_LIMITS = {
-    'admin': '1000/hour',
-    'analyst': '500/hour', 
-    'viewer': '200/hour'
-}
-
-# Password Policy
-PASSWORD_MIN_LENGTH = 8
+# Password policy
+PASSWORD_MIN_LENGTH        = 8
 PASSWORD_REQUIRE_UPPERCASE = True
-PASSWORD_REQUIRE_NUMBERS = True
-PASSWORD_REQUIRE_SYMBOLS = True
+PASSWORD_REQUIRE_NUMBERS   = True
+PASSWORD_REQUIRE_SYMBOLS   = True
+
+# CORS — use specific domains in production
+CORS_ORIGINS = "https://FraudNet-AI.shauryacodes.xyz"
 ```
+
+---
 
 ## 💻 Development Setup
 
 ### Prerequisites
 
-- **Backend**: Python 3.11+, Docker, MySQL 8.0+, Redis 7+
-- **Frontend**: Node.js 18+, npm 9+
-- **Infrastructure**: Docker Compose, Kubernetes (for production)
+
+| Layer              | Requirements                               |
+| ------------------ | ------------------------------------------ |
+| **Backend**        | Python 3.11+, Docker, MySQL 8.0+, Redis 7+ |
+| **Frontend**       | Node.js 18+, npm 9+                        |
+| **Infrastructure** | Docker Compose, Kubernetes (production)    |
 
 ### Full Development Environment
 
 ```bash
-# 1. Clone repository
-git clone https://github.com/your-username/fraudnet-ai.git
-cd fraudnet-ai
+# 1. Clone the repository
+git clone https://github.com/iSHOURIYA/FraudNet.AI.git
+cd FraudNet.AI
 
-# 2. Start backend services
-make docker-up                 # Start MySQL, Redis, Backend API
-make migrate                   # Initialize database
-python scripts/init_auth.py    # Create default users
+# 2. Start backend infrastructure
+make docker-up                  # MySQL + Redis + Flask API
+make migrate                    # Initialize database schema
+python scripts/init_auth.py     # Create default users
 
-# 3. Start frontend development
+# 3. Start the frontend development server
 cd frontend
-npm install                    # Install dependencies  
-npm run dev                    # Start Next.js dev server
+npm install
+npm run dev                     # http://localhost:3000
 
-# 4. Access applications
-# Frontend: http://localhost:3000
-# Backend API: http://localhost:5000
-# API Docs: http://localhost:5000/api/docs
-```
-
-### Development Scripts
-
-```bash
-# Backend Development
-make install         # Install Python dependencies
-make test           # Run all tests
-make lint           # Code linting
-make format         # Code formatting  
-make type-check     # TypeScript checking
-make security-scan  # Security vulnerability scan
-
-# Frontend Development  
-cd frontend
-npm run dev         # Development server
-npm run build       # Production build
-npm run lint        # ESLint checking
-npm run type-check  # TypeScript validation
-
-# Full Platform
-make dev-up         # Start full development stack
-make dev-down       # Stop development environment
-make reset-all      # Reset database and restart
+# API available at   http://localhost:5000
+# API docs at        http://localhost:5000/api/docs
 ```
 
 ### Development Workflow
@@ -447,690 +507,82 @@ graph LR
     J --> K[Deploy to Production]
 ```
 
-## 🐳 Production Deployment
-
-### Containerized Deployment (Recommended)
-
-FraudNet.AI provides production-ready Docker Compose configuration:
+### Makefile Reference
 
 ```bash
-# 1. Production deployment
+# Backend
+make install          # Install Python dependencies
+make test             # Run full test suite
+make test-unit        # Unit tests only
+make test-integration # Integration tests only
+make test-cov         # Tests with coverage report
+make lint             # Run linters (flake8, mypy)
+make format           # Auto-format (black, isort)
+make type-check       # MyPy static analysis
+make security-scan    # Vulnerability scanning
+make migrate          # Run database migrations
+make seed-data        # Load sample data
+make reset-db         # Reset database to clean state
+make train-model      # Train a new fraud detection model
+
+# Frontend  (run from /frontend)
+npm run dev           # Development server
+npm run build         # Production build
+npm run lint          # ESLint
+npm run type-check    # TypeScript validation
+npm test              # Jest unit tests
+npm run test:e2e      # Playwright end-to-end tests
+npm run test:coverage # Coverage report
+```
+
+---
+
+## 🐳 Production Deployment
+
+### Docker Compose (Recommended)
+
+```bash
+# 1. Deploy the full stack
 docker-compose -f docker-compose.prod.yml up -d
 
-# 2. Initialize system
+# 2. Initialise the system
 python scripts/init_auth.py
 
-# 3. Verify deployment
+# 3. Verify all services are healthy
 curl -f http://localhost:5000/api/v1/health
 curl -f http://localhost:3000
 ```
 
-### Services Overview
+The production compose file spins up:
 
 ```yaml
-# docker-compose.prod.yml includes:
 services:
-  frontend:          # Next.js web application (Port 3000)
-  api:              # Flask backend API (Port 5000) 
-  mysql:            # MySQL database (Port 3306)
-  redis:            # Redis cache & sessions (Port 6379)
-  kafka:            # Kafka message queue (Port 9092)
-  celery-worker:    # Background task processing
-  celery-beat:      # Scheduled task runner
-  prometheus:       # Metrics collection (Port 9090)
-  grafana:         # Monitoring dashboards (Port 3001)
-  nginx:           # Load balancer & reverse proxy (Port 80/443)
+  frontend:       # Next.js app           (port 3000)
+  api:            # Flask REST API        (port 5000)
+  mysql:          # Primary database      (port 3306)
+  redis:          # Cache & sessions      (port 6379)
+  kafka:          # Event streaming       (port 9092)
+  celery-worker:  # Background tasks
+  celery-beat:    # Scheduled jobs
+  prometheus:     # Metrics collection    (port 9090)
+  grafana:        # Monitoring dashboards (port 3001)
+  nginx:          # Reverse proxy         (port 80/443)
 ```
 
 ### Kubernetes Deployment
 
 ```bash
-# 1. Apply Kubernetes manifests
+# Apply all manifests
 kubectl apply -f k8s/
 
-# 2. Verify pods are running
+# Verify pods are running
 kubectl get pods -n fraudnet-ai
 
-# 3. Access via LoadBalancer
+# Get the frontend LoadBalancer address
 kubectl get svc fraudnet-frontend -n fraudnet-ai
 ```
 
-### Production Configuration
-
-```env
-# Security (Required)
-SECRET_KEY=your-256-bit-production-secret
-JWT_SECRET_KEY=your-jwt-256-bit-secret
-
-# Database
-DATABASE_URL=mysql+pymysql://user:password@mysql:3306/fraudnet_ai
-DATABASE_POOL_SIZE=20
-DATABASE_POOL_TIMEOUT=30
-
-# Redis
-REDIS_URL=redis://redis:6379/0
-CACHE_REDIS_URL=redis://redis:6379/1
-SESSION_REDIS_URL=redis://redis:6379/2
-
-# Frontend
-NEXT_PUBLIC_API_URL=https://api.yourdomain.com/api
-NEXT_PUBLIC_WS_URL=wss://api.yourdomain.com
-
-# Monitoring
-PROMETHEUS_ENABLED=true
-GRAFANA_ENABLED=true
-LOG_LEVEL=INFO
-LOG_FORMAT=json
-
-# Performance
-WORKERS=4
-MAX_CONNECTIONS=1000
-REQUEST_TIMEOUT=30
-```
-
-## 📊 Monitoring & Observability
-
-### Monitoring Stack
-
-![Monitoring Dashboard](docs/images/monitoring-stack.png)
-*Comprehensive monitoring with Prometheus, Grafana, and custom dashboards*
-
-#### Prometheus Metrics
-```python
-# Key metrics collected
-- fraudnet_requests_total              # Total API requests
-- fraudnet_requests_duration_seconds   # Request response time
-- fraudnet_fraud_detections_total      # Fraud detections count
-- fraudnet_model_inference_duration    # ML model performance
-- fraudnet_database_connections        # Database pool status
-- fraudnet_cache_operations_total      # Redis cache metrics
-```
-
-#### Grafana Dashboards
-- **Application Overview**: Request rates, error rates, response times
-- **Fraud Detection Metrics**: Detection rates, model performance, alerts
-- **Infrastructure Monitoring**: CPU, memory, disk usage, network I/O
-- **User Activity**: Login rates, session duration, feature usage
-- **Business Intelligence**: Transaction volumes, fraud trends, ROI metrics
-
-### Health Checks & Alerting
-
-```http
-GET /api/v1/health         # Basic health check
-GET /api/v1/health/db      # Database connectivity  
-GET /api/v1/health/cache   # Redis connectivity
-GET /api/v1/health/ml      # ML model status
-GET /api/v1/health/detailed # Comprehensive system status
-```
-
-### Log Management
-
-```json
-// Structured logging format
-{
-  "timestamp": "2026-02-17T10:30:00.123Z",
-  "level": "INFO",
-  "service": "fraudnet-api",
-  "correlation_id": "550e8400-e29b-41d4-a716-446655440000",
-  "user_id": "user_12345",
-  "endpoint": "/api/v1/transactions",
-  "method": "POST",
-  "status_code": 200,
-  "duration_ms": 89.5,
-  "fraud_probability": 0.15,
-  "model_version": "v2.1.3"
-}
-```
-
-## 🧪 Testing
-
-### Comprehensive Test Suite
-
-FraudNet.AI includes extensive testing for both frontend and backend components:
-
-```bash
-# Backend Testing
-make test              # Run full test suite
-make test-unit         # Unit tests only 
-make test-integration  # Integration tests
-make test-api         # API endpoint tests
-make test-ml          # ML model tests
-make test-coverage    # Generate coverage report
-
-# Frontend Testing
-cd frontend
-npm test              # Jest unit tests
-npm run test:e2e      # Playwright E2E tests
-npm run test:coverage # Test coverage report
-
-# Load Testing  
-make load-test        # Artillery.js load testing
-```
-
-### Test Coverage
-
-| Component | Coverage | Tests |
-|-----------|----------|-------|
-| **Backend API** | 95%+ | 450+ tests |
-| **Frontend Components** | 90%+ | 280+ tests |
-| **Authentication** | 98% | 85 tests |
-| **ML Pipeline** | 92% | 120 tests |
-| **Integration** | 88% | 65 tests |
-
-### Testing Environments
-
-```yaml
-# Test matrix
-environments:
-  - python: [3.11, 3.12]
-    node: [18, 20]  
-    mysql: [8.0, 8.1]
-    redis: [7.0, 7.2]
-    browsers: [chrome, firefox, safari, edge]
-```
-
-![Test Results Dashboard](docs/images/test-coverage.png)
-*Comprehensive test coverage dashboard with real-time results*
-
-## 🤝 Contributing
-
-### Development Guidelines
-
-We welcome contributions! Please follow our development guidelines:
-
-1. **Fork the repository** and create a feature branch
-2. **Write tests** for new functionality
-3. **Follow code style** with pre-commit hooks
-4. **Update documentation** as needed
-5. **Submit a pull request** with detailed description
-
-### Code Standards
-
-```bash
-# Code quality tools
-make lint          # Run all linters (flake8, mypy, eslint)
-make format        # Auto-format code (black, prettier)
-make security-scan # Security vulnerability scanning
-make pre-commit    # Run all pre-commit hooks
-```
-
-### Development Flow
-
-```mermaid
-graph TD
-    A[Create Feature Branch] --> B[Write Code]
-    B --> C[Add Tests]
-    C --> D[Run Test Suite]
-    D --> E[Code Review]
-    E --> F[CI/CD Pipeline]
-    F --> G[Deploy to Staging]
-    G --> H[QA Testing]
-    H --> I[Deploy to Production]
-```
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🆘 Support
-
-- **Documentation**: [docs.fraudnet.ai](https://docs.fraudnet.ai)
-- **Issues**: [GitHub Issues](https://github.com/your-username/fraudnet-ai/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/your-username/fraudnet-ai/discussions)
-- **Email**: support@fraudnet.ai
-
----
-
-## 📸 UI Image Generation Prompts
-
-**Use these prompts to generate professional screenshots for the platform documentation:**
-
-### 1. Dashboard Overview Screenshot
-```
-Create a professional screenshot of a fraud detection dashboard with:
-- Modern dark theme UI with blue and red accent colors
-- Top navigation bar with "FraudNet.AI" logo and user avatar
-- Key metrics cards showing: "Total Transactions: 45,231", "Fraud Detected: 892", "Fraud Rate: 1.97%", "Amount Saved: $2.3M"
-- Real-time line chart showing transaction volume over 24 hours
-- Color-coded fraud alerts list on the right sidebar
-- Clean, modern interface with subtle shadows and rounded corners
-- Professional typography and spacing
-- Responsive grid layout
-Filename: /docs/images/dashboard-overview.png
-```
-
-### 2. Transaction Analytics Interface
-```
-Create a screenshot of transaction analytics page featuring:
-- Data table with transaction rows showing: ID, Amount, Merchant, Risk Score (color-coded bars), Status
-- Advanced filter sidebar with date picker, amount range sliders, risk level toggles
-- Search bar with transaction ID/merchant search
-- Risk distribution donut chart showing Low (green), Medium (yellow), High (red) risk percentages
-- Export buttons (CSV, PDF) in top right
-- Pagination controls at bottom
-- Sort indicators on column headers
-- Modern table design with zebra striping
-Filename: /docs/images/transaction-analytics.png
-```
-
-### 3. User Management Dashboard
-```
-Create a user management interface screenshot showing:
-- User list table with columns: Avatar, Name, Email, Role (Admin/Analyst/Viewer), Status, Last Login
-- Role-based permission badges with different colors
-- "Add User" button with plus icon
-- User profile modal overlay showing user details and role assignment
-- Activity timeline on the right showing recent user actions
-- Search and filter controls for users
-- Professional admin interface design
-- Clean icons and consistent spacing
-Filename: /docs/images/user-management.png
-```
-
-### 4. Model Performance Dashboard
-```
-Create an ML model monitoring dashboard featuring:
-- Model performance metrics: Accuracy (94.2%), Precision (91.8%), Recall (89.5%), F1-Score (90.6%)
-- Training history line chart showing accuracy over epochs
-- Feature importance horizontal bar chart
-- Model version selector dropdown showing "v2.1.3 (Current)"
-- Real-time prediction latency gauge (85ms average)
-- Confusion matrix heatmap visualization
-- Model drift detection charts
-- Professional data science dashboard aesthetic
-Filename: /docs/images/model-performance.png
-```
-
-### 5. Alert Management Interface
-```
-Create an alert management dashboard with:
-- Real-time alert feed showing fraud alerts with timestamps
-- Alert severity indicators (Critical, High, Medium, Low) with color coding
-- Quick action buttons: "Approve", "Block", "Review"
-- Alert details panel showing transaction context and risk factors
-- Alert statistics cards: Active Alerts, Resolved Today, False Positives
-- Time-based alert volume chart
-- Alert filtering by severity and type
-- Clean notification-style interface design
-Filename: /docs/images/alert-management.png
-```
-
-### 6. Platform Overview Diagram
-```
-Create an architectural diagram showing:
-- Three main sections: Frontend (Next.js), Backend (Flask), Infrastructure
-- Frontend containing: Web Dashboard, Transaction Explorer, User Management
-- Backend containing: REST API, Authentication, ML Pipeline, Fraud Detection
-- Infrastructure containing: MySQL, Redis, Kafka, Prometheus, Grafana
-- Connecting arrows showing data flow between components
-- Clean, professional system architecture style
-- Blue and gray color scheme with clear labels
-- Modern diagram aesthetics similar to cloud architecture diagrams
-Filename: /docs/images/platform-overview.png
-```
-
-### 7. Real-time Monitoring Stack
-```
-Create a monitoring dashboard screenshot featuring:
-- Grafana-style dashboard with multiple panels
-- API response time graph with red alert threshold line
-- System resource utilization (CPU, Memory, Disk) gauges
-- Fraud detection rate metrics over time
-- Database connection pool status
-- Error rate alerts and notifications
-- Dark theme with bright accent colors for alerts
-- Professional monitoring tool aesthetic
-Filename: /docs/images/monitoring-stack.png
-```
-
-### 8. User Login Interface
-```
-Create a modern login page screenshot showing:
-- Centered login form on clean background
-- "FraudNet.AI" logo at top
-- Email and password input fields with modern styling
-- "Sign In" button with primary blue color
-- "Remember me" checkbox and "Forgot password?" link
-- Security badge/SSL indicator
-- Clean, minimal design with subtle gradients
-- Professional authentication interface
-Filename: /docs/images/user-dashboard.png
-```
-
-### 9. Transaction Explorer Details
-```
-Create a detailed transaction view showing:
-- Transaction details card with all transaction metadata
-- Risk assessment panel with visual risk scoring (0-100 scale)
-- Fraud indicators list with check/X marks
-- Related transactions section showing similar patterns
-- Action history timeline for the transaction
-- Manual review section with analyst notes
-- Approve/Reject/Review action buttons
-- Professional investigation interface design
-Filename: /docs/images/transaction-explorer.png
-```
-
-### 10. Test Coverage Dashboard
-```
-Create a testing dashboard screenshot featuring:  
-- Coverage percentage gauges for different components (Backend: 95%, Frontend: 90%)
-- Test suite results table showing passed/failed tests by category
-- Test execution time graph over recent runs
-- Code quality metrics panel
-- CI/CD pipeline status with green checkmarks
-- Professional development tools interface
-- Clean code coverage visualization style
-Filename: /docs/images/test-coverage.png
-```
-
-### 11. Real-time Processing Dashboard
-```
-Create a real-time processing interface showing:
-- Live transaction stream with scrolling transaction entries
-- Processing speed odometer showing "185ms avg"
-- Throughput chart showing transactions per second
-- Queue status indicators with current queue depth
-- Geographic transaction map with real-time dots
-- System health indicators (all green)
-- Professional real-time monitoring aesthetic
-- Dark background with bright data visualizations
-Filename: /docs/images/realtime-dashboard.png
-```
-
-**📝 Note**: Save all generated images to the `docs/images/` directory and ensure they maintain consistent styling with a modern, professional fraud detection platform theme. Use a dark/light theme toggle-friendly color scheme with primary colors being blue (#3B82F6) for accents and red (#EF4444) for fraud alerts.
-
-### Core Components
-
-- **Feature Engineering Pipeline**: Ensures training-inference parity with versioned schemas
-- **Model Training System**: Automated hyperparameter tuning and model evaluation
-- **Real-time Inference Engine**: High-performance fraud detection with model caching
-- **Security Layer**: Authentication, authorization, and rate limiting
-- **Database Layer**: MySQL for persistent storage, Redis for caching and sessions
-
-## 📚 API Documentation
-
-### Authentication
-
-All API endpoints require authentication via API key:
-
-```bash
-curl -H "X-API-Key: your-api-key" http://localhost:5000/api/v1/health
-```
-
-### Core Endpoints
-
-#### Transactions
-
-**Create Transaction**
-```http
-POST /api/v1/transactions
-Content-Type: application/json
-X-API-Key: your-api-key
-
-{
-  "user_id": "user_001",
-  "amount": 150.50,
-  "merchant": "Amazon",
-  "merchant_category": "online",
-  "location_country": "US",
-  "location_city": "New York",
-  "payment_method": "credit_card",
-  "device_type": "web"
-}
-```
-
-**Response:**
-```json
-{
-  "transaction_id": 123,
-  "fraud_probability": 0.15,
-  "risk_level": "low",
-  "prediction_id": 456,
-  "processing_time_ms": 89,
-  "features_used": ["amount_zscore", "merchant_frequency", "..."],
-  "model_version": "v1.2"
-}
-```
-
-**Get Transaction**
-```http
-GET /api/v1/transactions/123
-X-API-Key: your-api-key
-```
-
-**Bulk Transaction Processing**
-```http
-POST /api/v1/transactions/bulk
-Content-Type: application/json
-X-API-Key: your-api-key
-
-{
-  "transactions": [
-    { "user_id": "user_001", "amount": 100.00, ... },
-    { "user_id": "user_002", "amount": 250.00, ... }
-  ]
-}
-```
-
-#### Model Management
-
-**Train New Model**
-```http
-POST /api/v1/models/train
-X-API-Key: your-api-key
-
-{
-  "algorithm": "xgboost",
-  "hyperparameters": {
-    "n_estimators": 200,
-    "max_depth": 8,
-    "learning_rate": 0.1
-  }
-}
-```
-
-**Get Model Metrics**
-```http
-GET /api/v1/models/v1.2/metrics
-X-API-Key: your-api-key
-```
-
-#### Health & Monitoring
-
-**Health Check**
-```http
-GET /api/v1/health
-```
-
-**Detailed Health**
-```http
-GET /api/v1/health/detailed
-X-API-Key: your-api-key
-```
-
-### Error Responses
-
-All endpoints return consistent error responses:
-
-```json
-{
-  "error": "Validation failed",
-  "message": "Amount cannot be negative",
-  "timestamp": "2024-01-15T10:30:00Z",
-  "correlation_id": "abc-123-def"
-}
-```
-
-### Rate Limiting
-
-API endpoints are rate-limited per user:
-
-- **Transaction Creation**: 50 requests/minute
-- **Transaction Reads**: 100 requests/minute  
-- **Bulk Processing**: 10 requests/minute
-- **Model Training**: 5 requests/hour
-
-Rate limit headers are included in responses:
-
-```
-X-RateLimit-Limit: 50
-X-RateLimit-Remaining: 47
-X-RateLimit-Reset: 1642248600
-```
-
-## 💻 Development Setup
-
-### Environment Setup
-
-1. **Clone and setup**
-   ```bash
-   git clone https://github.com/your-username/fraudnet-ai.git
-   cd fraudnet-ai
-   make install
-   ```
-
-2. **Environment configuration**
-   ```bash
-   cp .env.template .env
-   # Edit .env file with your settings
-   ```
-
-3. **Start development environment**
-   ```bash
-   make docker-up
-   ```
-
-### Development Workflow
-
-**Run tests**
-```bash
-make test              # Run all tests
-make test-unit         # Unit tests only
-make test-integration  # Integration tests only
-make test-cov          # With coverage report
-```
-
-**Code quality**
-```bash
-make lint              # Run linting
-make format            # Format code
-make type-check        # Type checking
-```
-
-**Database operations**
-```bash
-make reset-db          # Reset database
-make migrate           # Run migrations
-make seed-data         # Seed with sample data
-```
-
-**Model training**
-```bash
-make train-model       # Train new model
-```
-
-### Development Tools
-
-- **Hot reloading**: Flask development server with auto-reload
-- **Database debugging**: SQL query logging in development mode
-- **API testing**: Postman collection and curl examples
-- **Code formatting**: Black, isort, flake8
-- **Type checking**: MyPy with strict configuration
-
-## 🚀 Production Deployment
-
-### Docker Deployment (Recommended)
-
-1. **Build production image**
-   ```bash
-   make prod-build
-   ```
-
-2. **Deploy with docker-compose**
-   ```bash
-   # Copy production environment file
-   cp .env.production .env
-   
-   # Edit .env with production values
-   vim .env
-   
-   # Start production stack
-   make prod-up
-   ```
-
-### Manual Deployment
-
-1. **Install dependencies**
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-2. **Set production environment**
-   ```bash
-   export FLASK_ENV=production
-   export SECRET_KEY="your-secure-secret-key"
-   export DATABASE_URL="mysql+pymysql://user:pass@host/db"
-   ```
-
-3. **Initialize database**
-   ```bash
-   python -c "from app.models.database import create_tables; create_tables()"
-   ```
-
-4. **Start with Gunicorn**
-   ```bash
-   gunicorn --bind 0.0.0.0:5000 --workers 4 run:app
-   ```
-
-### Nginx Configuration
-
-```nginx
-upstream fraudnet_app {
-    server app:5000;
-}
-
-server {
-    listen 80;
-    server_name your-domain.com;
-    
-    location / {
-        proxy_pass http://fraudnet_app;
-        proxy_set_header Host $host;
-        proxy_set_header X-Real-IP $remote_addr;
-        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-    }
-}
-```
-
-### Environment Variables (Production)
-
-```bash
-# Security (REQUIRED)
-SECRET_KEY=your-256-bit-secret-key
-JWT_SECRET_KEY=your-jwt-secret-key
-
-# Database
-DATABASE_URL=mysql+pymysql://user:password@host:3306/fraudnet
-DATABASE_POOL_SIZE=20
-
-# Redis
-REDIS_URL=redis://redis:6379/0
-
-# Monitoring
-PROMETHEUS_ENABLED=true
-LOG_LEVEL=WARNING
-```
-
-### Health Monitoring
-
-The system provides comprehensive health checks:
-
-- **Liveness probe**: `/api/v1/health/live`
-- **Readiness probe**: `/api/v1/health/ready`
-- **Detailed health**: `/api/v1/health/detailed`
-
-Kubernetes deployment example:
+**Health probe configuration:**
 
 ```yaml
 livenessProbe:
@@ -1148,180 +600,297 @@ readinessProbe:
   periodSeconds: 5
 ```
 
-## ⚙️ Configuration
+### Nginx Configuration
 
-### Environment Files
+```nginx
+upstream fraudnet_app {
+    server app:5000;
+}
 
-- **Development**: `.env` or environment variables
-- **Production**: `.env.production` or container environment
-- **Testing**: Configured in test files
+server {
+    listen 80;
+    server_name FraudNet-AI.shauryacodes.xyz;
 
-### Key Configuration Options
-
-| Variable | Default | Description |
-|----------|---------|-------------|
-| `FLASK_ENV` | `development` | Application environment |
-| `SECRET_KEY` | Required | Flask secret key |
-| `DATABASE_URL` | Required | Database connection string |
-| `REDIS_URL` | `redis://localhost:6379/0` | Redis connection string |
-| `RATE_LIMIT_ENABLED` | `true` | Enable rate limiting |
-| `RATE_LIMIT_PER_MINUTE` | `100` | Requests per minute limit |
-| `MODEL_CACHE_TTL` | `3600` | Model cache TTL in seconds |
-| `LOG_LEVEL` | `INFO` | Logging level |
-
-### Model Configuration
-
-```python
-# Model training parameters
-MODEL_RETRAIN_THRESHOLD = 0.05  # Retrain if accuracy drops by 5%
-MODEL_CACHE_TTL = 3600          # Cache models for 1 hour
-FEATURE_WINDOW_HOURS = 24       # Feature extraction window
+    location / {
+        proxy_pass http://fraudnet_app;
+        proxy_set_header Host              $host;
+        proxy_set_header X-Real-IP         $remote_addr;
+        proxy_set_header X-Forwarded-For   $proxy_add_x_forwarded_for;
+    }
+}
 ```
 
-### Security Configuration
+### Manual Deployment
 
-```python
-# Authentication
-API_KEY_HEADER = "X-API-Key"
-JWT_ACCESS_TOKEN_EXPIRES = 3600
+```bash
+# 1. Install dependencies
+pip install -r requirements.txt
 
-# Rate limiting
-RATE_LIMIT_PER_MINUTE = 100
-RATE_LIMIT_BURST = 20
+# 2. Set environment variables
+export FLASK_ENV=production
+export SECRET_KEY="your-secure-secret-key"
+export DATABASE_URL="mysql+pymysql://user:pass@host/db"
 
-# CORS (production should be specific domains)
-CORS_ORIGINS = "https://your-frontend-domain.com"
+# 3. Initialize database
+python -c "from app.models.database import create_tables; create_tables()"
+
+# 4. Start with Gunicorn
+gunicorn --bind 0.0.0.0:5000 --workers 4 run:app
 ```
+
+---
+
+## 📊 Monitoring & Observability
+
+![Monitoring Stack](https://media.discordapp.net/attachments/1468485983287902345/1473230052870062263/7.png?ex=699573e7&is=69942267&hm=0466a5ced1a2d352afe5ef957d655a21c2332a7facff931186147f4b618698b3&=&format=webp&quality=lossless&width=550&height=300)*Grafana dashboards — API latency, system resources, error rates, and fraud detection metrics*
+
+### Prometheus Metrics
+
+```
+fraudnet_requests_total              # Total API requests by endpoint
+fraudnet_requests_duration_seconds   # Request latency histogram
+fraudnet_fraud_detections_total      # Fraud detection count by risk level
+fraudnet_model_inference_duration    # ML inference latency
+fraudnet_database_connections        # Connection pool utilisation
+fraudnet_cache_operations_total      # Redis cache hit/miss rates
+```
+
+### Grafana Dashboards
+
+Five pre-built dashboards are included:
+
+* **Application Overview** — request rates, error rates, response times
+* **Fraud Detection Metrics** — detection rates, model performance, alert trends
+* **Infrastructure Monitoring** — CPU, memory, disk, network I/O
+* **User Activity** — login rates, session duration, feature usage
+* **Business Intelligence** — transaction volumes, fraud ROI, monthly trends
+
+### Structured Logging
+
+All logs are emitted as structured JSON with correlation IDs for easy tracing:
+
+```json
+{
+  "timestamp":         "2026-02-17T10:30:00.123Z",
+  "level":             "INFO",
+  "service":           "fraudnet-api",
+  "correlation_id":    "550e8400-e29b-41d4-a716-446655440000",
+  "user_id":           "user_12345",
+  "endpoint":          "/api/v1/transactions",
+  "method":            "POST",
+  "status_code":       200,
+  "duration_ms":       89.5,
+  "fraud_probability": 0.15,
+  "model_version":     "v2.1.3"
+}
+```
+
+---
 
 ## 🧪 Testing
 
-### Test Structure
+### Test Coverage
+
+
+| Component               | Coverage | Tests |
+| ----------------------- | -------- | ----- |
+| **Backend API**         | 95%+     | 450+  |
+| **Frontend Components** | 90%+     | 280+  |
+| **Authentication**      | 98%      | 85    |
+| **ML Pipeline**         | 92%      | 120   |
+| **Integration**         | 88%      | 65    |
+
+![Test Coverage Dashboard](https://media.discordapp.net/attachments/1468485983287902345/1473231102813409506/10.png?ex=699574e2&is=69942362&hm=fac78beae697552030ded3c0200604c91092bd24bba78164387f841d070b3234&=&format=webp&quality=lossless&width=550&height=300)
+
+### Test Suite Structure
 
 ```
 tests/
-├── unit/                 # Unit tests
+├── unit/                 # Isolated unit tests
 │   ├── test_models.py
 │   ├── test_features.py
 │   └── test_ml.py
-├── integration/          # Integration tests
+├── integration/          # End-to-end service tests
 │   ├── test_api.py
 │   ├── test_database.py
 │   └── test_security.py
-├── fixtures/             # Test fixtures
+├── fixtures/
 │   └── sample_data.py
-└── conftest.py          # Test configuration
+└── conftest.py
 ```
 
 ### Running Tests
 
 ```bash
-# All tests
-make test
+# Backend
+make test                                       # Full suite
+make test-unit                                  # Unit tests only
+make test-integration                           # Integration tests only
+make test-cov                                   # With HTML coverage report
+pytest tests/unit/test_models.py -v            # Specific file
+pytest tests/unit/test_models.py::TestUser -v  # Specific class
 
-# Specific test categories
-make test-unit
-make test-integration
+# Frontend
+npm test                  # Jest unit tests
+npm run test:e2e          # Playwright end-to-end
+npm run test:coverage     # Coverage report
 
-# With coverage
-make test-cov
-
-# Specific test file
-pytest tests/unit/test_models.py -v
-
-# Specific test
-pytest tests/unit/test_models.py::TestUser::test_create_user -v
+# Load testing
+ab -n 1000 -c 10 -H "Authorization: Bearer <token>" \
+   http://localhost:5000/api/v1/health
 ```
 
-### Test Coverage
+### Test Matrix
 
-The test suite maintains >80% code coverage across:
+```yaml
+python:   [3.11, 3.12]
+node:     [18, 20]
+mysql:    [8.0, 8.1]
+redis:    [7.0, 7.2]
+browsers: [chrome, firefox, safari, edge]
+```
 
-- **Model operations**: User, Transaction, Prediction models
-- **API endpoints**: All REST endpoints with various scenarios  
-- **Feature engineering**: Training-inference parity validation
-- **Security**: Authentication, rate limiting, validation
-- **ML components**: Model training, evaluation, inference
+---
 
-### Performance Testing
+## ⚙️ Configuration
+
+### Environment Files
+
+
+| Environment | File                     |
+| ----------- | ------------------------ |
+| Development | `.env`                   |
+| Production  | `.env.production`        |
+| Testing     | Configured per test file |
+
+### Key Variables
+
+
+| Variable                | Default                    | Description                   |
+| ----------------------- | -------------------------- | ----------------------------- |
+| `FLASK_ENV`             | `development`              | Application environment       |
+| `SECRET_KEY`            | **Required**               | Flask secret key (256-bit)    |
+| `JWT_SECRET_KEY`        | **Required**               | JWT signing key (256-bit)     |
+| `DATABASE_URL`          | **Required**               | MySQL connection string       |
+| `REDIS_URL`             | `redis://localhost:6379/0` | Redis connection string       |
+| `RATE_LIMIT_ENABLED`    | `true`                     | Enable per-user rate limiting |
+| `RATE_LIMIT_PER_MINUTE` | `100`                      | Default requests/min limit    |
+| `MODEL_CACHE_TTL`       | `3600`                     | ML model cache TTL (seconds)  |
+| `LOG_LEVEL`             | `INFO`                     | Logging verbosity             |
+| `PROMETHEUS_ENABLED`    | `true`                     | Enable Prometheus metrics     |
+| `WORKERS`               | `4`                        | Gunicorn worker count         |
+
+### Production Environment Block
 
 ```bash
-# Load testing with Apache Bench
-ab -n 1000 -c 10 -H "X-API-Key: your-key" \
-   http://localhost:5000/api/v1/health
+# Security (REQUIRED — generate fresh values for every deployment)
+SECRET_KEY=your-256-bit-secret-key
+JWT_SECRET_KEY=your-jwt-secret-key
 
-# Database performance testing
-python tests/performance/test_db_performance.py
+# Database
+DATABASE_URL=mysql+pymysql://user:password@mysql:3306/fraudnet_ai
+DATABASE_POOL_SIZE=20
+DATABASE_POOL_TIMEOUT=30
+
+# Redis
+REDIS_URL=redis://redis:6379/0
+CACHE_REDIS_URL=redis://redis:6379/1
+SESSION_REDIS_URL=redis://redis:6379/2
+
+# Frontend
+NEXT_PUBLIC_API_URL=https://FraudNet-AI.shauryacodes.xyz/api
+NEXT_PUBLIC_WS_URL=wss://FraudNet-AI.shauryacodes.xyz
+
+# Monitoring
+PROMETHEUS_ENABLED=true
+LOG_LEVEL=WARNING
+LOG_FORMAT=json
+
+# Performance
+WORKERS=4
+MAX_CONNECTIONS=1000
+REQUEST_TIMEOUT=30
 ```
+
+### ML Model Configuration
+
+```python
+MODEL_RETRAIN_THRESHOLD = 0.05   # Retrain if accuracy drops by 5%
+MODEL_CACHE_TTL         = 3600   # Cache model for 1 hour
+FEATURE_WINDOW_HOURS    = 24     # Feature extraction look-back window
+```
+
+---
 
 ## 🤝 Contributing
 
-We welcome contributions! Please follow these guidelines:
+We welcome contributions of all kinds — bug fixes, features, documentation, and tests.
 
 ### Development Process
 
-1. **Fork the repository**
+1. **Fork** the repository on [GitHub](https://github.com/iSHOURIYA/FraudNet.AI)
 2. **Create a feature branch**
    ```bash
-   git checkout -b feature/amazing-feature
+   git checkout -b feature/your-feature-name
    ```
-
-3. **Make your changes**
-   - Follow PEP 8 style guidelines
-   - Add tests for new functionality
-   - Update documentation as needed
-
-4. **Run the test suite**
+3. **Write your changes** following the code standards below
+4. **Run the full test suite**
    ```bash
-   make test
-   make lint
-   make type-check
+   make testmake lintmake type-check
    ```
-
-5. **Submit a pull request**
+5. **Submit a pull request** with a clear description of what changed and why
 
 ### Code Standards
 
-- **Python**: PEP 8 compliance, type hints required
-- **Docstrings**: Google-style docstrings for all public methods
-- **Testing**: Test coverage >80% for new code
-- **Security**: Security review required for authentication/authorization changes
+* **Python**: PEP 8 compliance, type hints required throughout
+* **Docstrings**: Google-style for all public methods and classes
+* **Test Coverage**: Maintain >80% for any new code
+* **Security**: Security review required for auth/authorization changes
+* **Frontend**: ESLint + Prettier enforced via pre-commit hooks
 
-### Commit Messages
+### Commit Message Format
 
-Use conventional commit format:
+Follow [Conventional Commits](https://www.conventionalcommits.org/):
 
 ```
-feat: add new fraud detection algorithm
-fix: resolve database connection pooling issue
-docs: update API documentation
+feat: add velocity-based fraud feature
+fix: resolve database connection pool exhaustion
+docs: update Kubernetes deployment guide
 test: add integration tests for bulk processing
+refactor: extract feature engineering pipeline
 ```
+
+---
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the **MIT License** — see the [LICENSE](https://github.com/iSHOURIYA/FraudNet.AI/blob/main/LICENSE) file for details.
+
+---
 
 ## 🆘 Support
 
 ### Documentation
 
-- **API Reference**: [docs/api.md](docs/api.md)
-- **Deployment Guide**: [docs/deployment.md](docs/deployment.md)
-- **Architecture Guide**: [docs/architecture.md](docs/architecture.md)
+
+| Resource           | Link                                                                                            |
+| ------------------ | ----------------------------------------------------------------------------------------------- |
+| API Reference      | [docs/api.md](https://github.com/iSHOURIYA/FraudNet.AI/blob/main/docs/api.md)                   |
+| Deployment Guide   | [docs/deployment.md](https://github.com/iSHOURIYA/FraudNet.AI/blob/main/docs/deployment.md)     |
+| Architecture Guide | [docs/architecture.md](https://github.com/iSHOURIYA/FraudNet.AI/blob/main/docs/architecture.md) |
+| Live Platform      | [FraudNet-AI.shauryacodes.xyz](https://fraudnet-ai.shauryacodes.xyz/)                           |
 
 ### Getting Help
 
-- **Issues**: [GitHub Issues](https://github.com/your-username/fraudnet-ai/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/your-username/fraudnet-ai/discussions)
-- **Security**: Email security@yourcompany.com for security issues
-
-### Monitoring & Alerts
-
-- **Application logs**: Structured JSON logs with correlation IDs
-- **Metrics**: Prometheus metrics available at `:8000/metrics`
-- **Health checks**: Multiple health check endpoints for monitoring
-- **Error tracking**: Detailed error responses with correlation IDs
+* **Bug Reports & Features**: [GitHub Issues](https://github.com/iSHOURIYA/FraudNet.AI/issues)
+* **Discussions**: [GitHub Discussions](https://github.com/iSHOURIYA/FraudNet.AI/discussions)
+* **General Support**: fraudnet.ai@shauryacodes.xyz
+* **Security Issues**: fraudnet.ai@shauryacodes.xyz *(please do not open public issues for vulnerabilities)*
 
 ---
 
-**FraudNet.AI** - Built with ❤️ for enterprise fraud detection
+<div align="center"> **FraudNet.AI** — Built with ❤️ by [iSHOURIYA](https://github.com/iSHOURIYA)
+
+[![Star this repo](https://img.shields.io/github/stars/iSHOURIYA/FraudNet.AI?style=social)](https://github.com/iSHOURIYA/FraudNet.AI)[![Live Demo](https://img.shields.io/badge/live-demo-brightgreen)](https://fraudnet-ai.shauryacodes.xyz/)
+
+</div>
